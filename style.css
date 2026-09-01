@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #243e63;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+.btn:hover {
+  background-color: rgba(80, 17, 204);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+}
+
+.purple {
+  color: #6415ff;
+}
+
+.container {
+  padding: 96px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+/*  NAV */
+
+nav {
+  padding-top: 32px;
+  display: flex;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding-bottom: 4px;
+}
+
+.nav__logo--img {
+  height: 40px;
+  width: 40px;
+}
+
+.nav__logo--text{
+  font-weight: 900;
+  font-size: 24px;
+  margin-left: 12px;
+  padding-bottom: 2px;
+  letter-spacing: 0.6px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.nav__link {
+  margin: 0 24px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 4px;
+  letter-spacing: 0.35px;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  transition: all 300ms;
+}
+
+.login {
+  margin-left: 48px;
+}
+
+/* JAVA  below*/
+.btn__menu {
+  background-color: transparent;
+  border: none;
+  display: none;
+  transition: all 300ms ease;
+}
+.btn__menu--svg:hover {
+  filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
+    brightness(94%) contrast(115%);
+}
+.btn__menu--close {
+  position: fixed;
+  top: 24px;
+  right: 18px;
+}
+/* JAVA above */
+
+/* HEADER / ABOUT US */
+
+section {
+  padding: 0 32px;
+}
+
+.row__header {
+  display: flex;
+}
+.header__description {
+  width: 40%;
+}
+
+.header__description--para {
+  margin: 32px 0;
+}
+
+.header__img--wrapper {
+  width: 60%;
+}
+
+.header__img {
+  width: 100%;
+}
+/*  COPY/PASTE below */
+.header__email {
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__email--btn {
+  z-index: 2;
+  margin: 8px;
+  height: calc(100% - 16px);
+  border-radius: 500px;
+  width: 160px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 300ms ease;
+}
+.header__email--input {
+  width: 100%;
+  border-radius: 500px;
+  border: 2px solid rgb(229, 231, 235);
+  padding: 20px 192px 20px 32px;
+  color: rgb(36, 62, 99);
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border-color 300ms;
+}
+/* COPY/PASTE above */
+
+.header__customers {
+  width: 100%;
+  margin-top: 16px;
+  padding-right: 128px;
+  opacity: 0.5;
+}
+
+.header__customers--title {
+  margin-top: 80px;
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6;
+}
