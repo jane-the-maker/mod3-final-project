@@ -337,4 +337,147 @@ section {
   margin-top: 32px;
 }
 
+/* STEPS */
 
+#steps .section__tag {
+  align-items: center;
+}
+
+#steps .section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#steps .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  position: relative;
+}
+
+.steps__img {
+  width: 100%;
+}
+.steps__description {
+  padding: 32px 0;
+  padding-left: 64px;
+}
+
+.steps__description,
+.steps__img--wrapper {
+  width: 50%;
+  max-width: 576px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* VALUES */
+
+#values .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#values .section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+#values .btn {
+  margin-top: 48px;
+}
+
+.values__description,
+.values__img {
+  width: 50%;
+}
+
+.values__description {
+  padding: 32px 64px 32px 0;
+}
+.values__list {
+  display: flex;
+  padding-top: 32px;
+}
+
+.value__title {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.value__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.value__name {
+  margin-left: 8px;
+}
+.value__img {
+  width: 16px;
+  height: 16px;
+  
+}
+
+.value__para {
+  margin-top: 16px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 8px;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
+}
+.value:nth-child(2) .value__img--wrapper {
+  background-color: #feb2b2;
