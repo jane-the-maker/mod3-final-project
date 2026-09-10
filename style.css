@@ -155,10 +155,12 @@ nav {
 }
 
 .btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
   border: none;
-  background: transparent;
-  display: display;
-  transition: all 300ms ease;
+  color: #7342d6;
+  display: none;
 }
 
 .menu__backdrop {
@@ -178,9 +180,10 @@ nav {
 }
 
 .btn__menu--close {
-  position: fixed;
-  top: 24px;
-  right: 18px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
   color: white;
 }
 
@@ -222,9 +225,6 @@ nav {
   margin-left: 48px;
 }
 
-.fa-bars {
-  display: none;
-}
 
 /* JAVA  below*/
 
@@ -519,6 +519,7 @@ section {
 .values__description {
   padding: 32px 64px 32px 0;
 }
+
 .values__list {
   display: flex;
   padding-top: 32px;
@@ -546,7 +547,6 @@ section {
 .value__img {
   width: 16px;
   height: 16px;
-  
 }
 
 .value__para {
@@ -705,10 +705,12 @@ section {
 #pricing .container {
   width: 100%;
 }
+
 #pricing .section__para {
   max-width: 576px;
   text-align: center;
 }
+
 .plan {
   position: relative;
   margin: 32px 16px;
@@ -726,6 +728,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
+
 .plan__stripe {
   position: absolute;
   left: 0px;
@@ -769,17 +772,21 @@ section {
   font-weight: bold;
   line-height: 1.625;
 }
+
 .plan__name {
   font-size: 20px;
 }
+
 .plan__price {
   font-size: 48px;
   margin: 4px 0;
 }
+
 .plan__duration {
   font-size: 16px;
   letter-spacing: 0.1em;
 }
+
 .plan__feature {
   margin-top: 20px;
   font-weight: 500;
@@ -787,12 +794,14 @@ section {
   font-size: 16px;
   line-height: 1.5;
 }
+
 .plan__target {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.025em;
 }
+
 .plan__button {
   border-radius: 0.25rem;
   background-color: rgb(100 21 255);
@@ -808,12 +817,14 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
 .plan__button:hover {
   transform: translate(1px, -1px);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+
 .plan:nth-child(1) .plan__stripe,
 .plan:nth-child(1) .plan__button {
   color: #f7fafc;
@@ -823,6 +834,7 @@ section {
     rgb(129, 230, 217) 100%
   );
 }
+
 .plan:nth-child(2) {
   background: linear-gradient(
     135deg,
@@ -830,13 +842,16 @@ section {
     rgb(102, 126, 234) 100%
   );
 }
+
 .plan:nth-child(2) .plan__button {
   color: #6415ff;
   background-color: #f7fafc;
 }
+
 .plan:nth-child(2) .plan__stripes {
   visibility: hidden;
 }
+
 .plan:nth-child(3) .plan__stripe,
 .plan:nth-child(3) .plan__button {
   color: #f7fafc;
@@ -846,14 +861,17 @@ section {
     rgb(254, 178, 178) 100%
   );
 }
+
 .plan:nth-child(odd) .plan__name,
 .plan:nth-child(odd) .plan__price,
 .plan:nth-child(odd) .plan__target {
   color: #1a202c;
 }
+
 .plan:nth-child(odd) .plan__duration {
   color: #a0aec0;
 }
+
 .plan:nth-child(2) .plan__name,
 .plan:nth-child(2) .plan__price,
 .plan:nth-child(2) .plan__target,
@@ -861,15 +879,18 @@ section {
 .plan:nth-child(2) .plan__feature {
   color: #f7fafc;
 }
+
 .plan:nth-child(1) .plan__middle,
 .plan:nth-child(3) .plan__middle {
   border-top: 2px solid rgb(229, 231, 235);
   border-bottom: 2px solid rgb(229, 231, 235);
 }
+
 .plan:nth-child(2) .plan__middle {
   border-top: 2px solid rgb(102, 126, 234);
   border-bottom: 2px solid rgb(102, 126, 234);
 }
+
 .plans__blob {
   z-index: -10;
   position: absolute;
@@ -880,6 +901,7 @@ section {
   width: 256px;
   opacity: 0.25;
 }
+
 .plans {
   display: flex;
   position: relative;
@@ -1171,6 +1193,10 @@ footer {
     display: none;
   }
 
+  .btn__menu {
+    display: block;
+  }
+
   .row__header {
     flex-direction: column;
     justify-content: center;
@@ -1241,14 +1267,6 @@ footer {
 
 
 @media (max-width: 768px) {
-
-  .nav__row {
-    display: none;
-  }
-
-  .btn__menu {
-    display: block;
-  }
 
   .testimonials__row {
     display: flex;
