@@ -34,35 +34,38 @@
                 <button class="btn__menu" onclick="openMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-
-                <div class="menu__backdrop">
-                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-
-                    <ul class="menu__links">
-                        <li class="menu__list">
-                            <a href="" class="menu__link">About</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="" class="menu__link">Blog</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="" class="menu__link">Pricing</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="" class="menu__link">Contact Us</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="" class="menu__link">Log In</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="" class="menu__link">Sign Up</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
+
+        <div class="menu">
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="" class="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="" class="menu__link">Pricing</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="" class="menu__link">Contact Us</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="" class="menu__link">Log In</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="" class="menu__link menu__link--primary">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
         
         
         <header>
@@ -72,7 +75,7 @@
                         <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
                         <p class="header__description--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
                         <div class="header__email">
-                            <input type="text" class="header__email--input" placeholder="Your E-mail Address">
+                            <input id="email" type="text" class="header__email--input" placeholder="Your E-mail Address">
                             <button class="header__email--btn">Get Started</button>
                         </div>
                         <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
