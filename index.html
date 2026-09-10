@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mod 3 Final</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/c69b4a51c5.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 
@@ -20,25 +19,48 @@
                     <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="nav__logo--img">
                     <h2 class="nav__logo--text">Treact</h2>
                 </div>
-                <div class="nav__links">
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Pricing</a>
-                    <a href="#" class="nav__link">Contact Us</a>
-                    <a href="#" class="nav__link login">Login</a>
-                    <a href="#" class="nav__link nav__link--primary">
+
+                <ul class="nav__links">
+                    <li class="nav__link">About</li>
+                    <li class="nav__link">Blog</li>
+                    <li class="nav__link">Pricing</li>
+                    <li class="nav__link">Contact Us</li>
+                    <li class="nav__link login">Login</li>
+                    <li class="nav__link nav__link--primary">
                         <button class="btn">Sign Up</button>
-                    </a>
-                </div>
+                    </li>
+                </ul>
+
                 <button class="btn__menu" onclick="openMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="btn__menu--svg">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
+                    <i class="fa-solid fa-bars"></i>
                 </button>
+
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="" class="menu__link">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="" class="menu__link">Contact Us</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="" class="menu__link">Log In</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="" class="menu__link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         
@@ -311,11 +333,11 @@
                         <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
                         <div class="testimonial">
                             <div class="testimonial__rating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
                             <h3 class="testimonial__title">Amazing User Experience</h3>
                             <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
